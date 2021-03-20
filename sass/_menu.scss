@@ -1,0 +1,45 @@
+@import 'config';
+
+.menu-btn{
+    position: absolute;
+    z-index: 3;
+    top: 35px;
+    right : 35px;
+    cursor: pointer;
+    @include ease-out;
+
+    .btn-line{
+        width : 28px;
+        height : 3px;
+        margin: 0 0 5px 0;
+        background : #eee;
+        @include ease-out;
+        
+    }
+
+    &.close{
+        transform: rotate(180deg);
+
+            //1st line 
+            .btn-line{
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px,5px);
+
+            }
+        }
+
+            //2nd line 
+            .btn-line{
+            &:nth-child(2){
+                opacity: 0;
+            }
+        }
+
+            //3rd line 
+            .btn-line{
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px , -6px);
+            }
+        }
+    }
+}
