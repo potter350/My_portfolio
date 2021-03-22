@@ -285,8 +285,30 @@ main {
     font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
+    main h1.lg-heading {
+      font-size: 4rem; }
   main#home h1 {
     margin-top: 10vh;
     font-size: 3rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #contact {
+    overflow: hidden; }
+    #contact .lg-heading {
+      font-size: 3rem; }
+    #contact .boxes div {
+      font-size: 1rem;
+      padding: 1rem 0.5rem; }
+      #contact .boxes div:hover {
+        padding: .5rem .25rem;
+        background: #eece1a;
+        color: #000; }
+        #contact .boxes div:hover span {
+          color: #000; } }
