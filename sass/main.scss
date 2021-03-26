@@ -100,6 +100,11 @@ main {
         font-size: 1.5rem;
     }
 
+    .bio-text{
+        text-indent: 50px;
+        text-align: justify;
+    }
+
     .job1{
         grid-area: job1;
     }
@@ -109,7 +114,27 @@ main {
     }
 
     .job3{
-        grid-area: job3;
+        grid-area: job3; 
+        
+    }
+
+
+
+    a button{
+        display: block;      
+        width: 100%;  
+        bottom: 0;
+        padding: 10px 20px ;
+        font-size: 1rem;
+        background : lighten($color: $primary-color , $amount: 50);
+        color: rgb(109, 46, 46);
+        cursor: pointer;
+        
+
+            &:hover{
+                background: $secondary-color ;
+                color: set-text-color($secondary-color ) ;
+            }
     }
 
     .job{
@@ -190,7 +215,7 @@ main {
 .btn-light{
     @extend .btn;
     background : lighten($color: $primary-color , $amount: 50);
-    color: #444;
+    color: rgb(109, 46, 46);
 }
 
 .btn-dark{
@@ -198,6 +223,8 @@ main {
     background : darken($color: $primary-color , $amount: 50);
     color: #fff;
 }
+
+
 
 #main-footer{
    
