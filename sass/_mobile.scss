@@ -83,6 +83,14 @@
 // mobile phones
 @include screenSm {
 
+    .about-info{
+
+        .bio-text{
+            text-indent: 130px;
+            text-align: justify;
+        }
+    }
+
     main{
         padding : 2rem;
          #home h1{
